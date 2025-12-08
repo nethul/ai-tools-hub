@@ -21,9 +21,47 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "AI Tools Hub - Curated AI-Powered Tools Collection",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://ai-tools-hub.vercel.app'),
+  title: {
+    default: "AI Tools Hub - Curated AI-Powered Tools Collection",
+    template: "%s | AI Tools Hub",
+  },
   description: "Discover and explore curated AI-powered tools to boost your productivity, creativity, and decision-making.",
-  keywords: "AI tools, machine learning, productivity, movie recommendations, AI-powered applications",
+  keywords: ["AI tools", "machine learning", "productivity", "movie recommendations", "AI-powered applications", "Next.js", "React"],
+  authors: [{ name: "AI Tools Hub Team" }],
+  creator: "AI Tools Hub",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    title: "AI Tools Hub - Curated AI-Powered Tools Collection",
+    description: "Discover and explore curated AI-powered tools to boost your productivity, creativity, and decision-making.",
+    siteName: "AI Tools Hub",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "AI Tools Hub Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Tools Hub - Curated AI-Powered Tools Collection",
+    description: "Discover and explore curated AI-powered tools to boost your productivity, creativity, and decision-making.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
