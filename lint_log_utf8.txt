@@ -1,0 +1,648 @@
+﻿
+> ai-tools-hub@0.1.0 lint
+> eslint
+
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\about\page.tsx
+  37:171  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\actions\chatDocsActions.ts
+   65:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  122:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\actions\humanizerActions.ts
+  44:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\api\summarize\route.ts
+  84:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\blog\page.tsx
+  27:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\contact\page.tsx
+  23:73  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx
+   24:13  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:24:13
+   22 |
+   23 |         return (
+>  24 |             <main className="min-h-screen bg-slate-950 text-slate-200 py-24 px-4">
+      |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  25 |                 <div className="max-w-7xl mx-auto">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  26 |                     <Link
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 147 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 148 |             </main>
+      | ^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  149 |         );
+  150 |     } catch (error) {
+  151 |         console.error('Error fetching movie details:', error);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+   25:17  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:25:17
+   23 |         return (
+   24 |             <main className="min-h-screen bg-slate-950 text-slate-200 py-24 px-4">
+>  25 |                 <div className="max-w-7xl mx-auto">
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  26 |                     <Link
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^
+>  27 |                         href="/tools/movie-match"
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 146 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 147 |                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  148 |             </main>
+  149 |         );
+  150 |     } catch (error) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/error-boundaries
+   26:21  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:26:21
+  24 |             <main className="min-h-screen bg-slate-950 text-slate-200 py-24 px-4">
+  25 |                 <div className="max-w-7xl mx-auto">
+> 26 |                     <Link
+     |                     ^^^^^
+> 27 |                         href="/tools/movie-match"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 28 |                         className="inline-flex items-center text-sm text-slate-400 hover:text-violet-400 transition-colors mb-8"
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 44 |                         Back to Movie Match
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 45 |                     </Link>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  46 |
+  47 |                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+  48 |                         {/* Sidebar with Poster */}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+   30:25  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:30:25
+  28 |                         className="inline-flex items-center text-sm text-slate-400 hover:text-violet-400 transition-colors mb-8"
+  29 |                     >
+> 30 |                         <svg
+     |                         ^^^^
+> 31 |                             xmlns="http://www.w3.org/2000/svg"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 32 |                             fill="none"
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 42 |                             />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 43 |                         </svg>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  44 |                         Back to Movie Match
+  45 |                     </Link>
+  46 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react-hooks/error-boundaries
+   38:29  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:38:29
+  36 |                             className="w-4 h-4 mr-1"
+  37 |                         >
+> 38 |                             <path
+     |                             ^^^^^
+> 39 |                                 strokeLinecap="round"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 40 |                                 strokeLinejoin="round"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 41 |                                 d="M10.5:19.5 3 12m0 0 7.5-7.5M3 12h18"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 42 |                             />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  43 |                         </svg>
+  44 |                         Back to Movie Match
+  45 |                     </Link>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/error-boundaries
+   47:21  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:47:21
+   45 |                     </Link>
+   46 |
+>  47 |                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  48 |                         {/* Sidebar with Poster */}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  49 |                         <div className="lg:col-span-1">
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 145 |                         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 146 |                     </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  147 |                 </div>
+  148 |             </main>
+  149 |         );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+   49:25  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:49:25
+  47 |                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+  48 |                         {/* Sidebar with Poster */}
+> 49 |                         <div className="lg:col-span-1">
+     |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 50 |                             <div className="relative aspect-[2/3] w-full rounded-2xl overflow-hidden shadow-2xl shadow-violet-500/10 border border-slate-800">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 51 |                                 {movie.posterPath ? (
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 70 |                             )}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 71 |                         </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  72 |
+  73 |                         {/* Main Content */}
+  74 |                         <div className="lg:col-span-2">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react-hooks/error-boundaries
+   50:29  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:50:29
+  48 |                         {/* Sidebar with Poster */}
+  49 |                         <div className="lg:col-span-1">
+> 50 |                             <div className="relative aspect-[2/3] w-full rounded-2xl overflow-hidden shadow-2xl shadow-violet-500/10 border border-slate-800">
+     |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 51 |                                 {movie.posterPath ? (
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 52 |                                     <Image
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 63 |                                 )}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 64 |                             </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  65 |
+  66 |                             {movie.tagline && (
+  67 |                                 <p className="mt-6 text-center text-lg text-violet-200 italic font-medium">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/error-boundaries
+   52:37  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:52:37
+  50 |                             <div className="relative aspect-[2/3] w-full rounded-2xl overflow-hidden shadow-2xl shadow-violet-500/10 border border-slate-800">
+  51 |                                 {movie.posterPath ? (
+> 52 |                                     <Image
+     |                                     ^^^^^^
+> 53 |                                         src={movie.posterPath}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 54 |                                         alt={movie.title}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 55 |                                         fill
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 56 |                                         className="object-cover"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 57 |                                         priority
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 58 |                                     />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  59 |                                 ) : (
+  60 |                                     <div className="w-full h-full bg-slate-900 flex items-center justify-center text-slate-500">
+  61 |                                         No Poster Available                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/error-boundaries
+   60:37  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:60:37
+  58 |                                     />
+  59 |                                 ) : (
+> 60 |                                     <div className="w-full h-full bg-slate-900 flex items-center justify-center text-slate-500">
+     |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 61 |                                         No Poster Available
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 62 |                                     </div>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  63 |                                 )}
+  64 |                             </div>
+  65 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/error-boundaries
+   67:33  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:67:33
+  65 |
+  66 |                             {movie.tagline && (
+> 67 |                                 <p className="mt-6 text-center text-lg text-violet-200 italic font-medium">
+     |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 68 |                                     "{movie.tagline}"
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 69 |                                 </p>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  70 |                             )}
+  71 |                         </div>
+  72 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/error-boundaries
+   68:37  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react/no-unescaped-entities
+   68:53  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react/no-unescaped-entities
+   74:25  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:74:25
+   72 |
+   73 |                         {/* Main Content */}
+>  74 |                         <div className="lg:col-span-2">
+      |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  75 |                             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  76 |                                 {movie.title}
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 144 |                             </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 145 |                         </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  146 |                     </div>
+  147 |                 </div>
+  148 |             </main>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/error-boundaries
+   75:29  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:75:29
+  73 |                         {/* Main Content */}
+  74 |                         <div className="lg:col-span-2">
+> 75 |                             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+     |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 76 |                                 {movie.title}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 77 |                             </h1>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  78 |
+  79 |                             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-400 mb-8">
+  80 |                                 {movie.releaseDate && (                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    react-hooks/error-boundaries
+   79:29  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:79:29
+   77 |                             </h1>
+   78 |
+>  79 |                             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-400 mb-8">
+      |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  80 |                                 {movie.releaseDate && (
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  81 |                                     <span className="bg-slate-900 px-3 py-1 rounded-full border border-slate-800">
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  97 |                                 )}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  98 |                             </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+   99 |
+  100 |                             <div className="mb-8">
+  101 |                                 <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/error-boundaries
+   81:37  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:81:37
+  79 |                             <div className="flex flex-wrap items-center gap-4 text-sm text-slate-400 mb-8">
+  80 |                                 {movie.releaseDate && (
+> 81 |                                     <span className="bg-slate-900 px-3 py-1 rounded-full border border-slate-800">
+     |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 82 |                                         {new Date(movie.releaseDate).getFullYear()}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 83 |                                     </span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  84 |                                 )}
+  85 |                                 {movie.runtime && (
+  86 |                                     <span className="bg-slate-900 px-3 py-1 rounded-full border border-slate-800">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react-hooks/error-boundaries
+   86:37  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:86:37
+  84 |                                 )}
+  85 |                                 {movie.runtime && (
+> 86 |                                     <span className="bg-slate-900 px-3 py-1 rounded-full border border-slate-800">
+     |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 87 |                                         {Math.floor(movie.runtime / 60)}h {movie.runtime % 60}m
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 88 |                                     </span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  89 |                                 )}
+  90 |                                 {movie.voteAverage && (
+  91 |                                     <span className="bg-slate-900 px-3 py-1 rounded-full border border-slate-800 flex items-center gap-1 text-yellow-400">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/error-boundaries
+   91:37  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:91:37
+  89 |                                 )}
+  90 |                                 {movie.voteAverage && (
+> 91 |                                     <span className="bg-slate-900 px-3 py-1 rounded-full border border-slate-800 flex items-center gap-1 text-yellow-400">
+     |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 92 |                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0:0 24 24" fill="currentColor" className="w-4 h-4">
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 93 |                                             <path fillRule="evenodd" d="M10.788:3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 94 |                                         </svg>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 95 |                                         {movie.voteAverage.toFixed(1)}
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 96 |                                     </span>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  97 |                                 )}
+  98 |                             </div>
+  99 |                      react-hooks/error-boundaries
+   92:41  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:92:41
+  90 |                                 {movie.voteAverage && (
+  91 |                                     <span className="bg-slate-900 px-3 py-1 rounded-full border border-slate-800 flex items-center gap-1 text-yellow-400">
+> 92 |                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0:0 24 24" fill="currentColor" className="w-4 h-4">
+     |                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 93 |                                             <path fillRule="evenodd" d="M10.788:3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 94 |                                         </svg>
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  95 |                                         {movie.voteAverage.toFixed(1)}
+  96 |                                     </span>
+  97 |                                 )}                                                                                                                                                                                                                                                                                                                                      react-hooks/error-boundaries
+   93:45  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:93:45
+  91 |                                     <span className="bg-slate-900 px-3 py-1 rounded-full border border-slate-800 flex items-center gap-1 text-yellow-400">
+  92 |                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0:0 24 24" fill="currentColor" className="w-4 h-4">
+> 93 |                                             <path fillRule="evenodd" d="M10.788:3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
+     |                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  94 |                                         </svg>
+  95 |                                         {movie.voteAverage.toFixed(1)}
+  96 |                                     </span>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/error-boundaries
+  100:29  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:100:29
+   98 |                             </div>
+   99 |
+> 100 |                             <div className="mb-8">
+      |                             ^^^^^^^^^^^^^^^^^^^^^^
+> 101 |                                 <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 102 |                                 <p className="text-slate-300 leading-relaxed text-lg">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 103 |                                     {movie.overview}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 104 |                                 </p>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 105 |                             </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  106 |
+  107 |                             <div className="mb-8">
+  108 |                                 <h2 className="text-xl font-semibold text-white mb-3">Genres</h2>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                react-hooks/error-boundaries
+  101:33  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:101:33
+   99 |
+  100 |                             <div className="mb-8">
+> 101 |                                 <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
+      |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  102 |                                 <p className="text-slate-300 leading-relaxed text-lg">
+  103 |                                     {movie.overview}
+  104 |                                 </p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/error-boundaries
+  102:33  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:102:33
+  100 |                             <div className="mb-8">
+  101 |                                 <h2 className="text-xl font-semibold text-white mb-3">Overview</h2>
+> 102 |                                 <p className="text-slate-300 leading-relaxed text-lg">
+      |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 103 |                                     {movie.overview}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 104 |                                 </p>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  105 |                             </div>
+  106 |
+  107 |                             <div className="mb-8">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/error-boundaries
+  107:29  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:107:29
+  105 |                             </div>
+  106 |
+> 107 |                             <div className="mb-8">
+      |                             ^^^^^^^^^^^^^^^^^^^^^^
+> 108 |                                 <h2 className="text-xl font-semibold text-white mb-3">Genres</h2>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 109 |                                 <div className="flex flex-wrap gap-2">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 110 |                                     {movie.genres.map(genre => (
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 111 |                                         <span key={genre.id} className="text-sm text-cyan-400 bg-cyan-950/30 px-3 py-1 rounded-full border border-cyan-900/50">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 112 |                                             {genre.name}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 113 |                                         </span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 114 |                                     ))}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 115 |                                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 116 |                             </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  117 |
+  118 |                             <div>
+  119 |                                 <h2 className="text-xl font-semibold text-white mb-4">Top Cast</h2>  react-hooks/error-boundaries
+  108:33  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:108:33
+  106 |
+  107 |                             <div className="mb-8">
+> 108 |                                 <h2 className="text-xl font-semibold text-white mb-3">Genres</h2>
+      |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  109 |                                 <div className="flex flex-wrap gap-2">
+  110 |                                     {movie.genres.map(genre => (
+  111 |                                         <span key={genre.id} className="text-sm text-cyan-400 bg-cyan-950/30 px-3 py-1 rounded-full border border-cyan-900/50">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/error-boundaries
+  109:33  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:109:33
+  107 |                             <div className="mb-8">
+  108 |                                 <h2 className="text-xl font-semibold text-white mb-3">Genres</h2>
+> 109 |                                 <div className="flex flex-wrap gap-2">
+      |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 110 |                                     {movie.genres.map(genre => (
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 111 |                                         <span key={genre.id} className="text-sm text-cyan-400 bg-cyan-950/30 px-3 py-1 rounded-full border border-cyan-900/50">
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 112 |                                             {genre.name}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 113 |                                         </span>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 114 |                                     ))}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 115 |                                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  116 |                             </div>
+  117 |
+  118 |                             <div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            react-hooks/error-boundaries
+  118:29  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:118:29
+  116 |                             </div>
+  117 |
+> 118 |                             <div>
+      |                             ^^^^^
+> 119 |                                 <h2 className="text-xl font-semibold text-white mb-4">Top Cast</h2>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 120 |                                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 143 |                                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 144 |                             </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  145 |                         </div>
+  146 |                     </div>
+  147 |                 </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/error-boundaries
+  119:33  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:119:33
+  117 |
+  118 |                             <div>
+> 119 |                                 <h2 className="text-xl font-semibold text-white mb-4">Top Cast</h2>
+      |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  120 |                                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+  121 |                                     {cast.map(person => (
+  122 |                                         <div key={person.id} className="bg-slate-900/50 rounded-xl p-3 border border-slate-800">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react-hooks/error-boundaries
+  120:33  error  Error: Avoid constructing JSX within try/catch
+
+React does not immediately render components when JSX is rendered, so any errors from this component will not be caught by the try/catch. To catch errors in rendering a given component, wrap that component in an error boundary. (https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary).
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\movie\[id]\page.tsx:120:33
+  118 |                             <div>
+  119 |                                 <h2 className="text-xl font-semibold text-white mb-4">Top Cast</h2>
+> 120 |                                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 121 |                                     {cast.map(person => (
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 122 |                                         <div key={person.id} className="bg-slate-900/50 rounded-xl p-3 border border-slate-800">
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 142 |                                     ))}
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 143 |                                 </div>
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Avoid constructing JSX within try/catch
+  144 |                             </div>
+  145 |                         </div>
+  146 |                     </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react-hooks/error-boundaries
+  156:65  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        react/no-unescaped-entities
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\page.tsx
+  10:9  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\providers.tsx
+  3:17  warning  'createContext' is defined but never used  @typescript-eslint/no-unused-vars
+  3:32  warning  'useContext' is defined but never used     @typescript-eslint/no-unused-vars
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\tools\geo-vision\page.tsx
+   3:38  warning  'useCallback' is defined but never used   @typescript-eslint/no-unused-vars
+  91:23  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\tools\humanizer\page.tsx
+  9:17  error  Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\tools\movie-match\page.tsx
+   64:40   warning  'baseMovies' is defined but never used                           @typescript-eslint/no-unused-vars
+  150:54   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  159:160  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  179:80   error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\app\tools\text-summarizer\page.tsx
+  9:21  error  Do not use an `<a>` element to navigate to `/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\Navbar.tsx
+  15:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\ToolsGrid.tsx
+  19:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  19:13  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+  29:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  29:13  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+  38:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  38:13  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+  48:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  48:13  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+  58:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  58:13  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\chat-docs\ChatInterface.tsx
+  49:18  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\chat-docs\FileUploader.tsx
+  32:8   warning  React Hook useCallback has a missing dependency: 'handleUpload'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  65:23  error    Unexpected any. Specify a different type                                                                           @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\geo-vision\ImageDisplay.tsx
+  35:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  72:25  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  72:46  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\movie-match\InputChips.tsx
+  119:29  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  161:41  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\movie-match\Loader.tsx
+  19:8  warning  React Hook useEffect has a missing dependency: 'messages.length'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\movie-match\MovieCard.tsx
+  47:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  60:76  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\movie-match\ShareRecommendations.tsx
+  35:86  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  37:37  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  52:18  warning  'err' is defined but never used           @typescript-eslint/no-unused-vars
+
+D:\Web_Projects\AI web tools\ai-tools-hub\components\text-summarizer\SummarizerInterface.tsx
+  63:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\sanity\lib\image.ts
+  8:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\services\geminiService.ts
+    9:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   30:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   59:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  156:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\Web_Projects\AI web tools\ai-tools-hub\services\geoVisionService.ts
+  49:17  error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+
+D:\Web_Projects\AI web tools\ai-tools-hub\services\tmdbService.ts
+  120:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 82 problems (58 errors, 24 warnings)
+
