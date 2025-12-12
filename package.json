@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.35.6",
+    "@faker-js/faker": "^10.1.0",
     "@google/genai": "^1.31.0",
     "@sanity/image-url": "^2.0.1",
     "@sanity/vision": "^4.20.0",
@@ -17,12 +18,16 @@
     "@types/diff": "^7.0.2",
     "@vercel/analytics": "^1.6.1",
     "diff": "^8.0.2",
+    "file-saver": "^2.0.5",
+    "lucide-react": "^0.561.0",
     "next": "^16.0.7",
     "next-sanity": "^11.6.10",
     "react": "19.2.0",
     "react-dom": "19.2.0",
+    "react-markdown": "^10.1.0",
     "sanity": "^4.20.0",
-    "styled-components": "^6.1.19"
+    "styled-components": "^6.1.19",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
