@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'AI Tools Hub',
+        name: 'AI Tools Verse',
         short_name: 'AI Tools',
         description: 'Curated AI-Powered Tools Collection',
         start_url: '/',

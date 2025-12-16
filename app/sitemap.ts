@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/tools/chat-with-your-docs',
         '/tools/humanizer',
         '/tools/text-summarizer',
+        '/tools/fact-checker',
+        '/tools/mock-data',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
