@@ -17,5 +17,6 @@ export const POST_QUERY = groq`*[_type == "post" && slug.current == $slug][0] {
   publishedAt,
   mainImage,
   author,
-  body
+  body,
+  "excerpt": array::join(string::split((pt::text(body)), "")[0..160], "") + "..."
 }`

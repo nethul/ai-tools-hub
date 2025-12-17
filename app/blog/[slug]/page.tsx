@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { PortableText } from '@portabletext/react'
 import { client } from '@/sanity/lib/client'
 import { POST_QUERY } from '@/sanity/lib/queries'
@@ -8,6 +9,38 @@ import { notFound } from 'next/navigation'
 
 // Revalidate every 60 seconds
 export const revalidate = 60
+
+export async function generateMetadata(
+    { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+    const { slug } = await params
+    const post = await client.fetch(POST_QUERY, { slug })
+
+    if (!post) {
+        return {
+            title: 'Post Not Found',
+        }
+    }
+
+    return {
+        title: post.title,
+        description: post.excerpt || 'Read this post on AI Tools Verse',
+        openGraph: {
+            title: post.title,
+            description: post.excerpt || 'Read this post on AI Tools Verse',
+            images: post.mainImage ? [urlFor(post.mainImage).width(1200).height(630).url()] : undefined,
+            type: 'article',
+            publishedTime: post.publishedAt,
+            authors: post.author ? [post.author] : undefined,
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: post.title,
+            description: post.excerpt || 'Read this post on AI Tools Verse',
+            images: post.mainImage ? [urlFor(post.mainImage).width(1200).height(630).url()] : undefined,
+        },
+    }
+}
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
     const { slug } = await params
