@@ -1,7 +1,22 @@
 import { MetadataRoute } from 'next';
+import { client } from '@/sanity/lib/client';
+import { groq } from 'next-sanity';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = (process.env.NEXT_PUBLIC_APP_URL || 'https://aitoolverse.app').replace(/\/$/, '');
+
+    // Fetch all blog posts
+    const posts = await client.fetch(groq`*[_type == "post" && defined(slug.current)] {
+        "slug": slug.current,
+        publishedAt
+    }`);
+
+    const blogRoutes = posts.map((post: any) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.publishedAt),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
 
     // Static routes
     const routes = [
@@ -23,5 +38,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: route === '' ? 1 : 0.8,
     }));
 
-    return routes;
+    return [...routes, ...blogRoutes];
 }
