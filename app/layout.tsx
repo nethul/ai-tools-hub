@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "AI Tools Hub",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "AI Tools Verse Preview",
@@ -51,6 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AI Tools Verse - Curated AI-Powered Tools Collection",
     description: "Discover and explore curated AI-powered tools to boost your productivity, creativity, and decision-making.",
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
