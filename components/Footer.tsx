@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <div>
                         <h4 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400 mb-3">
-                            AI Tools Hub
+                            AI Tool Verse
                         </h4>
                         <p className="text-slate-400 text-sm leading-relaxed">
                             A curated collection of AI-powered tools designed to enhance productivity and creativity.
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="text-center text-slate-500 text-sm pt-8 border-t border-slate-800">
-                    <span>© {new Date().getFullYear()} AI Tools Hub — Powered by AI</span>
+                    <span>© {new Date().getFullYear()} AI Tool Verse — Powered by AI</span>
                 </div>
             </div>
         </footer>

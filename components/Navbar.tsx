@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
                         <img src={"/logo.png"} alt="Logo" className="w-full h-full object-contain"></img>
                     </div>
                     <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">
-                        AI Tools Hub
+                        AI Tool Verse
                     </span>
                 </Link>
 
