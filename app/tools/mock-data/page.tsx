@@ -10,9 +10,7 @@ import { generateDataScript } from '../../../services/mock-data-gemini';
 
 export default function MockDataGeneratorPage() {
     const [schema, setSchema] = useState<SchemaItem[]>([
-        { id: '1', name: 'id', description: 'UUID' },
-        { id: '2', name: 'full_name', description: 'Full Name' },
-        { id: '3', name: 'email', description: 'Email Address' }
+        { id: '1', name: '', description: '' }
     ]);
     const [rowCount, setRowCount] = useState<number>(50);
     const [isGeneratingScript, setIsGeneratingScript] = useState(false);

@@ -80,6 +80,26 @@ const tools: Tool[] = [
         href: '/tools/mock-data',
         gradient: 'from-fuchsia-500 to-pink-500'
     },
+    {
+        id: 'image-resizer',
+        title: 'AI Image Resizer',
+        description: 'Smartly resize and enhance your images. Process everything locally within your browser.',
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-scaling w-full h-full p-2"><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M21 15c0-1.7-1.3-3-3-3s-3-1.3-3-3 1.3-3 3-3" /><path d="M3 15c0 1.7 1.3 3 3 3s3 1.3 3 3-1.3 3-3 3" /></svg>
+        ),
+        href: '/tools/image-resizer',
+        gradient: 'from-blue-500 to-cyan-500'
+    },
+    {
+        id: 'cv-generator',
+        title: 'Pro CV Generator',
+        description: 'Create professional resumes with AI polish. Choose templates and export to PDF instantly.',
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-text w-full h-full p-2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" /><polyline points="14 2 14 8 20 8" /><path d="M16 13H8" /><path d="M16 17H8" /><path d="M10 9H8" /></svg>
+        ),
+        href: '/tools/cv-generator',
+        gradient: 'from-emerald-500 to-teal-500'
+    },
 
 ];
 
