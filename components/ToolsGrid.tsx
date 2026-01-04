@@ -130,6 +130,26 @@ const tools: Tool[] = [
         href: '/tools/image-editor',
         gradient: 'from-amber-500 to-yellow-500'
     },
+    {
+        id: 'word-finder-replacer',
+        title: 'Word Finder & Replacer',
+        description: 'Find words with live highlighting and replace them selectively. All processing happens in your browser.',
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full p-2"><path d="M4 6h16" /><path d="M4 12h10" /><path d="M4 18h6" /><circle cx="17" cy="17" r="3" /><path d="m21 21-1.5-1.5" /></svg>
+        ),
+        href: '/tools/word-finder-replacer',
+        gradient: 'from-teal-500 to-emerald-500'
+    },
+    {
+        id: 'password-generator',
+        title: 'Password Generator',
+        description: 'Generate secure, random passwords with customizable length, character types, and strength analysis.',
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full p-2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /><circle cx="12" cy="16" r="1" /></svg>
+        ),
+        href: '/tools/password-generator',
+        gradient: 'from-purple-500 to-pink-500'
+    },
 
 ];
 
