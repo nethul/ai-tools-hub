@@ -150,6 +150,16 @@ const tools: Tool[] = [
         href: '/tools/password-generator',
         gradient: 'from-purple-500 to-pink-500'
     },
+    {
+        id: 'text-to-speech',
+        title: 'Text to Speech',
+        description: 'Convert text to natural speech instantly. Multiple voices, adjustable speed and pitch. Works offline.',
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full p-2"><path d="M12 6c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2s2-.9 2-2V8c0-1.1-.9-2-2-2z" /><path d="M19 10v2a7 7 0 0 1-14 0v-2" /><line x1="12" x2="12" y1="19" y2="22" /></svg>
+        ),
+        href: '/tools/text-to-speech',
+        gradient: 'from-emerald-500 to-cyan-500'
+    },
 
 ];
 
