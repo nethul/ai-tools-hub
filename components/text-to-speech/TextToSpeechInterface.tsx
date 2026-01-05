@@ -434,7 +434,7 @@ const TextToSpeechInterface = () => {
                             )}
                         </button>
                         <p className="text-xs text-slate-500 mt-2 text-center">
-                            High-quality neural voice
+                            Max 200 characters for download
                         </p>
                     </div>
 
