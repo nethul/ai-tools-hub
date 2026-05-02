@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Movie Match AI | AI Tool Verse",
-    description: "Get personalized movie recommendations based on your preferences using AI.",
-    keywords: ["movie recommender", "ai movie suggestions", "film finder", "what to watch", "movie discovery"],
+    title: "MovieMatch AI - The Best Free AI Movie Recommender",
+    description: "Stop scrolling. Let our AI analyze your taste and find the perfect movie across Netflix, Hulu, and Prime Video instantly.",
+    keywords: ["movie recommender", "ai movie suggestions", "film finder", "what to watch", "movie discovery", "free ai movie recommender"],
+    alternates: {
+      canonical: '/tools/movie-match',
+    },
 };
 
 export default function MovieMatchLayout({
@@ -11,5 +14,23 @@ export default function MovieMatchLayout({
 }: {
     children: React.ReactNode;
 }) {
-    return <>{children}</>;
+    return (
+      <>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "MovieMatch AI",
+              "applicationCategory": "EntertainmentApplication",
+              "operatingSystem": "Web",
+              "description": "Stop scrolling. Let our AI analyze your taste and find the perfect movie across Netflix, Hulu, and Prime Video instantly.",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+            })
+          }}
+        />
+        {children}
+      </>
+    );
 }
