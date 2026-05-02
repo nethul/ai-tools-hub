@@ -36,7 +36,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/tools/image-upscaler',
         '/tools/viral-news',
         '/tools/image-editor',
-        '/tools/text-to-speech'
+        '/tools/text-to-speech',
+        '/tools/youtube-title-generator',
+        '/tools/cover-letter-generator',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
