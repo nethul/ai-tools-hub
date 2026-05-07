@@ -37,6 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/tools/viral-news',
         '/tools/image-editor',
         '/tools/text-to-speech',
+        '/tools/insta-bio-generator',,
         '/tools/youtube-title-generator',
         '/tools/cover-letter-generator',
     ].map((route) => ({
