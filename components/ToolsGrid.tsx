@@ -202,6 +202,16 @@ const tools: Tool[] = [
         href: '/tools/caption-generator',
         gradient: 'from-pink-500 to-rose-500'
     },
+    {
+        id: 'seo-meta-generator',
+        title: 'SEO Meta Generator',
+        description: 'Generate high-CTR, perfectly optimized meta descriptions to boost your Google rankings instantly.',
+        icon: (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full p-2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        ),
+        href: '/tools/seo-meta-generator',
+        gradient: 'from-blue-500 to-teal-500'
+    },
 
 ];
 

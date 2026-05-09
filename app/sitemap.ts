@@ -40,6 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/tools/insta-bio-generator',
         '/tools/youtube-title-generator',
         '/tools/cover-letter-generator',
+        '/tools/seo-meta-generator',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
