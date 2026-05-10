@@ -12,16 +12,15 @@ const Hero: React.FC = () => {
             <div className="max-w-5xl mx-auto text-center animate-fade-in">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-semibold mb-6 font-space-grotesk">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-purple-400 to-cyan-400">
-                        Discover AI Tools
+                        The Premier AI Tool Hub
                     </span>
                     <br />
                     <span className="text-white font-semibold text-6xl">
-                        That Make Your Life Easier
+                        That Makes Your Life Easier
                     </span>
                 </h1>
                 <p className="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-                    Expertly curated AI tools to boost your productivity, creativity, and decision-making.
-                    Find and evaluate the right solutions for you.
+                    Explore our expertly curated collection at AI Tool Verse. Discover AI tools to boost your productivity, creativity, and daily workflow.
                 </p>
                 <a
                     href="#tools"

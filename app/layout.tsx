@@ -24,20 +24,20 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://aitoolverse.app'),
   title: {
-    default: "AI Tools Verse - Curated AI-Powered Tools Collection",
-    template: "%s | AI Tools Verse",
+    default: "AI Tool Verse | The Ultimate AI Tool Hub for Productivity & Creativity",
+    template: "%s | AI Tool Verse",
   },
-  description: "Discover and explore curated AI-powered tools to boost your productivity, creativity, and decision-making.",
-  keywords: ["AI tools", "machine learning", "productivity", "movie recommendations", "AI-powered applications", "Next.js", "React"],
-  authors: [{ name: "AI Tools Verse Team" }],
-  creator: "AI Tools Verse",
+  description: "Welcome to AI Tool Verse, your premier AI Tool Hub. Discover and explore 100+ curated AI tools designed to boost your productivity, creativity, and daily workflow.",
+  keywords: ["AI tools", "AI Tool Hub", "machine learning", "productivity", "AI-powered applications", "Next.js", "React"],
+  authors: [{ name: "AI Tool Verse Team" }],
+  creator: "AI Tool Verse",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "AI Tool Verse - Curated AI-Powered Tools Collection",
-    description: "Discover and explore curated AI-powered tools to boost your productivity, creativity, and decision-making.",
-    siteName: "AI Tools Hub",
+    title: "AI Tool Verse | The Ultimate AI Tool Hub for Productivity & Creativity",
+    description: "Welcome to AI Tool Verse, your premier AI Tool Hub. Discover and explore 100+ curated AI tools designed to boost your productivity, creativity, and daily workflow.",
+    siteName: "AI Tool Verse",
     images: [
       {
         url: "/logo.png",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Tools Verse - Curated AI-Powered Tools Collection",
-    description: "Discover and explore curated AI-powered tools to boost your productivity, creativity, and decision-making.",
+    title: "AI Tool Verse | The Ultimate AI Tool Hub for Productivity & Creativity",
+    description: "Welcome to AI Tool Verse, your premier AI Tool Hub. Discover and explore 100+ curated AI tools designed to boost your productivity, creativity, and daily workflow.",
     images: ["/logo.png"],
   },
   robots: {
